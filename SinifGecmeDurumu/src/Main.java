@@ -23,27 +23,26 @@ public class Main {
         System.out.print("Müzik Notunu Giriniz: ");
         muzik=input.nextInt();
 
-        if (!(matematik <= 0 || matematik > 100)) {
+        if (!(matematik <= 0 | matematik > 100)) {
             toplamNot += matematik;
             toplamDers++;
         }
-        if (!(fizik <= 0 || fizik > 100)) {
+        if (!(fizik <= 0 | fizik > 100)) {
             toplamNot += fizik;
             toplamDers++;
         }
-        if (!(turkce <= 0 || turkce > 100)) {
+        if (!(turkce <= 0 | turkce > 100)) {
             toplamNot += turkce;
             toplamDers++;
         }
-        if (!(kimya <= 0 || kimya > 100)) {
+        if (!(kimya <= 0 | kimya > 100)) {
             toplamNot += kimya;
             toplamDers++;
         }
-        if !(muzik <= 0 || muzik > 100)) {
-            toplamNot += muzik;
-            toplamDers++;
-        }
-
+        if (!(muzik <= 0 | muzik > 100)) {
+        toplamNot += muzik;
+        toplamDers++;
+    }
         ortalama=toplamNot/toplamDers;
         if (ortalama<55){
             System.out.println("Ortalamanız: " + ortalama);
